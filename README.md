@@ -15,22 +15,22 @@
    npm install lucide-react
    ```
 
-3. Replace the contents of src/App.js:
-   Copy the entire code from the artifact and paste it into src/App.js, replacing its current contents.
+3. Replace the contents of `src/App.js`:
+   Copy the entire code from the artifact and paste it into `src/App.js`, replacing its current contents.
 
-4. Update src/index.js:
-   Make sure src/index.js is importing App correctly:
+4. Update `src/index.js`:
+   Make sure `src/index.js` is importing App correctly:
 
    ```javascript
    import React from "react";
    import ReactDOM from "react-dom/client";
    import "./index.css";
-   import App from "./App";
+   import App from "./App"; // Update the App with the correct React component name
 
    const root = ReactDOM.createRoot(document.getElementById("root"));
    root.render(
      <React.StrictMode>
-       <App />
+       <App /> // Update the App with the correct React component name
      </React.StrictMode>
    );
    ```
